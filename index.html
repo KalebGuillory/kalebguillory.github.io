@@ -335,102 +335,6 @@
             font-weight: 600;
         }
 
-        /* Contact Section */
-        .contact {
-            background-color: var(--secondary-color);
-            color: white;
-        }
-
-        .contact h2 {
-            color: white;
-        }
-
-        .contact h2::after {
-            background-color: white;
-        }
-
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .contact-item i {
-            font-size: 1.3rem;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: var(--border-radius);
-            background-color: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-family: inherit;
-        }
-
-        .contact-form input::placeholder,
-        .contact-form textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1a252f;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            background-color: var(--primary-color);
-            transform: translateY(-5px);
-        }
-
         /* Responsive Design */
         @media (max-width: 992px) {
             .about-content {
@@ -518,7 +422,6 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <i class="fas fa-bars"></i>
@@ -534,7 +437,6 @@
             <p>I'm a passionate <span id="typing-text"></span></p>
             <div class="hero-btns">
                 <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
         </div>
     </section>
@@ -548,12 +450,10 @@
                     <img src="https://mail.google.com/mail/u/0/popout?ver=1kb54q60x21o5#attid%253Datt_19ae665e3af49a3b_0.1_957d90fe_3c84cce4_eda46227_a542151c_89f6ce83%25252FIMG_8388.jpg" alt="John Doe">
                 </div> -->
                 <div class="about-text">
-                    <h3>Hello! Kaleb Guillory</h3>
+                    <h3>Hello! I'm Kaleb Guillory</h3>
                     <p>I'm in my third year at the University of Central Oklahoma steadily working toward my Bachelor's Degree in Computer Science.
-                    <p>I'm 
                     <p>I'm a full-stack developer with 5+ years of experience creating digital solutions for businesses. I specialize in building responsive web applications that provide great user experiences.</p>
                     <p>My passion for technology started at a young age, and I hope to code professionally after I graduate with a Computer Science degree. I enjoy solving complex problems and learning new technologies.</p>
-                    <a href="#contact" class="btn" style="margin-top: 20px;">Get In Touch</a>
                 </div>
             </div>
         </div>
@@ -566,23 +466,13 @@
             <div class="skills-container">
                 <div class="skill-item">
                     <i class="fas fa-code"></i>
-                    <h3>Frontend Development</h3>
-                    <p>HTML5, CSS3, JavaScript, React, Vue.js, Responsive Design, Cross-browser Compatibility</p>
+                    <h3>Coding Languages</h3>
+                    <p>C, C#, C++, and Java</p>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-server"></i>
-                    <h3>Backend Development</h3>
-                    <p>Node.js, Express, Python, Django, REST APIs, Database Design, Authentication</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                    <p>MySQL, PostgreSQL, MongoDB, Firebase, Database Optimization, Data Modeling</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools & Others</h3>
-                    <p>Git, Docker, AWS, Figma, Agile/Scrum, CI/CD, Testing, Problem Solving</p>
+                    <h3>Proficiencies</h3>
+                    <p>Visual Studio Code, Microsoft Visual Studio, Windows 10/11</p>
                 </div>
             </div>
         </div>
@@ -594,114 +484,14 @@
             <h2 class="section-title">My Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="E-commerce Platform">
                     </div>
                     <div class="project-info">
-                        <h3>E-commerce Platform</h3>
-                        <p>A full-featured online shopping platform with user authentication, payment processing, and admin dashboard.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                            <span class="tag">Stripe API</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="Task Management App">
-                    </div>
-                    <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative project management tool with real-time updates, team assignment, and progress tracking.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Real-time</span>
-                            <span class="tag">PWA</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Weather Dashboard">
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>A responsive weather application that provides forecasts, maps, and historical weather data for any location.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">API Integration</span>
-                            <span class="tag">CSS Grid</span>
-                            <span class="tag">Charts.js</span>
-                        </div>
+                        <h3>Coming Soon!</h3>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>San Francisco, CA</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>john.doe@example.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Available</h3>
-                            <p>Mon - Fri: 9AM - 6PM</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-codepen"></i></a>
-            </div>
-            <p>&copy; 2023 John Doe. All Rights Reserved.</p>
-        </div>
-    </footer>
 
     <script>
         // Mobile Navigation Toggle
