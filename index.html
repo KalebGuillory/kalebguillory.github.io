@@ -502,62 +502,6 @@
             });
         });
         
-        // Typing Effect
-        const typingText = document.getElementById('typing-text');
-        const professions = ['Web Developer', 'UI/UX Designer', 'Problem Solver', 'Tech Enthusiast'];
-        let professionIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        let isEnd = false;
-        
-        function typeEffect() {
-            const currentProfession = professions[professionIndex];
-            
-            if (isDeleting) {
-                typingText.textContent = currentProfession.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typingText.textContent = currentProfession.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            
-            if (!isDeleting && charIndex === currentProfession.length) {
-                isEnd = true;
-                isDeleting = true;
-                setTimeout(typeEffect, 1500);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                professionIndex = (professionIndex + 1) % professions.length;
-                setTimeout(typeEffect, 500);
-            } else {
-                const typeSpeed = isDeleting ? 50 : 100;
-                setTimeout(typeEffect, typeSpeed);
-            }
-        }
-        
-        // Start typing effect after page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(typeEffect, 1000);
-        });
-        
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form values
-            const name = contactForm.querySelector('input[type="text"]').value;
-            const email = contactForm.querySelector('input[type="email"]').value;
-            const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
-            const message = contactForm.querySelector('textarea').value;
-            
-            // In a real application, you would send this data to a server
-            // For demo purposes, we'll just show an alert
-            alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-            
-            // Reset form
-            contactForm.reset();
-        });
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
